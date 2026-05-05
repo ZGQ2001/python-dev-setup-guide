@@ -5,7 +5,7 @@
 
 ![Python](https://img.shields.io/badge/python-3.12+-blue.svg)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-![License](https://img.shields.io/github/license/ZGQ2001/python-dev-setup-guide)
+![License](https://img.shields.io/github/license/ZGQ2001/python-dev-setup-guide?color=blue&cache=none)
 ![Last Commit](https://img.shields.io/github/last-commit/ZGQ2001/python-dev-setup-guide)
 ![Stars](https://img.shields.io/github/stars/ZGQ2001/python-dev-setup-guide?style=social)
 
