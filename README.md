@@ -1,6 +1,6 @@
 <div align="center">
 
-# Python 开发环境配置手册
+# 非程序员的工程化 Python 入门操作手册
 **（Windows + uv + VS Code + GitHub）**
 
 ![Python](https://img.shields.io/badge/python-3.12+-blue.svg)
