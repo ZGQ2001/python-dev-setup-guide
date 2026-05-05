@@ -1,0 +1,39 @@
+[project]
+name = "python-dev-setup-guide"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ZGQ2001", email = "Z13623133797@GMAIL.COM" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.11.8,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "ruff>=0.15.12",
+]
+
+# ====== Ruff 规则配置区块 ======
+[tool.ruff]
+# 设定代码一行的最大长度。超过此长度 Ruff 会自动帮你换行，避免横向滚动条过长
+line-length = 100 
+# 设定需要检查的源代码目录，排除虚拟环境等无关文件
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+# 选择要启用的检查规则集
+select = [
+    "E",  # pycodestyle 错误（如缩进、空格不规范）
+    "F",  # Pyflakes（如定义了变量却没使用、引入了没用的库）
+    "I",  # isort（import 排序规范）
+    "W",  # pycodestyle 警告
+]
+# 忽略某些特定的规则（如果你觉得某条规则太严厉，可以把它的编号写在这里）
+#例如可修改为 ignore = ["RUF001", "RUF002", "RUF003"]（明确忽略易混淆字符（中文标点）规则，防止误报）
+ignore = ["RUF001", "RUF002", "RUF003"]

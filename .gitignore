@@ -1,0 +1,71 @@
+# ==========================================
+# ✅ 以下文件不在此列表 = 会被上传到 GitHub
+# pyproject.toml    → 必须上传（项目配置）
+# uv.lock           → 必须上传（依赖版本锁定）
+# .python-version   → 必须上传（Python 版本指定）
+# .gitignore        → 必须上传
+# README.md         → 必须上传
+# .env.example      → 建议上传（配置模板）
+# *.bat             → 建议上传 （启动脚本）
+# 所有 .py 文件     → 必须上传
+# ==========================================
+
+
+# ===== ❌ Python 虚拟环境（体积大，必须忽略）=====
+# .venv 是 uv 创建的虚拟环境文件夹，里面是按项目装的所有库
+# 体积可达几百 MB，且每台电脑应该自己重新生成（uv sync）
+.venv/
+venv/
+__pycache__/        # Python 运行时自动生成的字节码缓存
+*.py[cod]           # 编译后的 Python 文件
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ===== ❌ 敏感配置（含密码/密钥，绝对不能上传）=====
+.env
+.env.local
+.env.production
+config.ini
+secrets.json
+*.key
+*.pem
+*.p12
+
+# ===== ❌ 系统垃圾文件 =====
+.DS_Store           # Mac 系统在每个文件夹自动生成的隐藏文件
+Thumbs.db           # Windows 缩略图缓存
+desktop.ini         # Windows 文件夹自定义图标配置
+
+# ===== ❌ VS Code 本地配置 =====
+.vscode/
+*.code-workspace
+
+# ===== ❌ 日志与临时文件 =====
+*.log
+*.tmp
+*.temp
+/temp/
+/cache/
+/output/
+
+# ===== ❌ WPS / Office 临时锁定文件 =====
+# 当你在 WPS 或 Office 打开 report.docx 时，
+# 系统会同时生成一个 ~$report.docx 隐藏文件，
+# 用来标记"这个文档正在被编辑"。
+# 关闭文档后通常会自动删除，但偶尔会残留。
+# 这些临时文件不是你的内容，不应该上传。
+~$*.docx
+~$*.xlsx
+~$*.pptx
+~$*.doc
+~$*.xls
+
+# ===== ❌ 大体积数据文件（GitHub 单文件限制 100MB）=====
+# 按需取消注释：
+# *.csv
+# *.xlsx
+# *.pdf
+# /data/
