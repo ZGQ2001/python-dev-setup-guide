@@ -1,16 +1,17 @@
-# Python 开发环境配置手册（Windows + uv + VS Code + GitHub）
-
 <div align="center">
 
 # Python 开发环境配置手册
+**（Windows + uv + VS Code + GitHub）**
 
 ![Python](https://img.shields.io/badge/python-3.12+-blue.svg)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 ![License](https://img.shields.io/github/license/ZGQ2001/python-dev-setup-guide)
 ![Last Commit](https://img.shields.io/github/last-commit/ZGQ2001/python-dev-setup-guide)
-![GitHub stars](https://img.shields.io/github/stars/ZGQ2001/python-dev-setup-guide?style=social)
+![Stars](https://img.shields.io/github/stars/ZGQ2001/python-dev-setup-guide?style=social)
 
 </div>
+
+---
 
 > **版本**：v1.0.0  | 更新日期：2026-05-05  
 > **适用人群**：零基础开发者、非计算机专业编程实践者、期望通过 Python 与 AI 工具提升工作效率的从业人员   
