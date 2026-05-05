@@ -1,7 +1,7 @@
 [project]
 name = "python-dev-setup-guide"
 version = "0.1.0"
-description = "Python 开发环境配置手册"
+description = "非程序员的工程化 Python 入门操作手册"
 license = "MIT"
 readme = "README.md"
 authors = [
