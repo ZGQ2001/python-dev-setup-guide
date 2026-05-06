@@ -10,9 +10,9 @@ on:
 
 jobs:
   test-and-lint:
-    # 操作系统：GitHub 提供的一台最新的 Windows 虚拟机
-    runs-on: windows-latest
-
+    # 操作系统：GitHub 提供的一台最新的 Ubuntu 虚拟机
+    runs-on: ubuntu-latest    # 可选的操作系统：windows-latest、macos-latest
+                              # 但是ubuntu-latest通常是最快的选择，且兼容性最好
     steps:
       # 第 1 步：把你的代码拉取到虚拟机里
       - name: 检出代码
