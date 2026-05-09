@@ -1,6 +1,6 @@
 # 引言及目录导航
 
->目前已完成第一部分的内容编写，后续内容正在陆续补充。
+> 目前已完成第一部分的内容编写，后续内容正在陆续补充。
 
 ## 编写初衷
 
@@ -14,39 +14,44 @@
 1. **彻底解耦**：业务逻辑与通用工具严格分离。
 2. **高复用性**：每一行代码都应具备在未来项目中直接提取使用的能力。
 3. **零红线标准**：所有项目必须通过 Pylance Basic 级别的静态检查，严禁带红线提交。
-4. **自动化防线**：利用 CI （持续集成） 与 AI 助手，将低级错误拦截在本地。
+4. **自动化防线**：利用 CI（持续集成）与 AI 助手，将低级错误拦截在本地。
 
 ---
+
 ## 📖 目录导航
 
 ### 第一部分：基础构建与环境初始化
 
 * [1.1 核心概念理解](./01-concepts.md)（虚拟环境、版本控制系统、编辑器的定位）
 * [1.2 基础环境安装](./02-installation.md)（环境依赖下载、路径命名限制、uv 包管理器配置）
-* [1.3 GitHub 联动与编辑器初步调优](./03-github-ssh.md)：（SSH 密钥生成与 GitHub 本地联动）
-* [1.4 实战：从零跑通第一个标准化项目 (10 步法)](./04-project-init.md)：（从 `uv init` 到建立标准化包结构）
+* [1.3 GitHub 联动与编辑器初步调优](./03-github-ssh.md)（SSH 密钥生成与 GitHub 本地联动）
+* [1.4 实战：从零跑通第一个标准化项目（10 步法）](./04-project-init.md)
 
 ### 第二部分：标准开发工作流
 
-* [2.1 日常代码提交流程](./05-workflow.md)（Pull -> Code -> Lint/Format -> Commit -> Push）
-* [2.2 持续集成与自动化测试](./06-ci-testing.md)（GitHub Actions 流水线配置与 Pytest 连通性测试）
-* [2.3 敏感信息与配置隔离](./07-security.md)（使用 `.env` 保护接口密钥与私有数据）
-* [2.4 执行脚本封装](./08-bat-scripts.md)（编写 `.bat` 批处理文件，实现脱离 IDE 的独立运行）
-* [2.5 跨设备环境迁移](./09-migration.md)（基于 `uv.lock` 的依赖还原与环境重建）
-* [2.6 代码调试与 AI 辅助排错](./10-debugging.md)（断点调试原理与 AI 错误分析）
+* [2.1 AI 辅助编程工作流](./05-ai-workflow.md)（需求描述、代码验收、AGENTS.md 配置）
+* [2.2 代码调试与排错](./06-debugging.md)（断点调试原理与 AI 辅助错误分析）
+* [2.3 日常代码提交流程](./07-git-workflow.md)（Pull → Code → Lint/Format → Commit → Push）
+* [2.4 敏感信息与配置隔离](./08-security.md)（使用 `.env` 保护接口密钥与私有数据）
+* [2.5 执行脚本封装](./09-bat-scripts.md)（编写 `.bat` 批处理文件，实现脱离 IDE 独立运行）
+* [2.6 单元测试基础](./10-unit-testing.md)（pytest 核心用法与测试文件组织）
+* [2.7 跨设备环境迁移](./11-migration.md)（基于 `uv.lock` 的依赖还原与环境重建）
 
 ### 第三部分：工程配置参考
-* [3.1 静态检查规则集](./11-templates-config.md)（`pyproject.toml` 中的 Ruff 最佳实践配置）
-* [3.2 版本控制忽略清单](./12-gitignore.md)（`.gitignore` 标准模板）
-* [3.3 提交信息规范](./13-git-commit.md)（`Commit Message` 的标准化语法约定）
-* [3.4 标准化目录结构模板](./14-src-reference.md)（业务代码与测试代码的物理分布）
-* [3.5 常用命令行速查](./15-cheat-sheet.md)（uv、Git 与常用终端命令）
+
+* [3.1 静态检查规则集](./12-ruff-config.md)（`pyproject.toml` 中的 Ruff 最佳实践配置）
+* [3.2 版本控制忽略清单](./13-gitignore.md)（`.gitignore` 标准模板）
+* [3.3 提交信息规范](./14-git-commit.md)（Commit Message 的标准化语法约定）
+* [3.4 标准化目录结构模板](./15-src-reference.md)（业务代码与测试代码的物理分布）
+* [3.5 常用命令行速查](./16-cheat-sheet.md)（uv、Git 与常用终端命令）
+* [3.6 Windows 编码与路径避坑](./17-windows-encoding.md)（GBK/UTF-8 混用、中文路径、`chcp` 速查）
 
 ### 第四部分：底层机制解析
-* [4.1 采用 src 布局的必要性](./16-deep-dive-src.md)（解决模块导入路径冲突）
-* [4.2 uv 包管理器的性能优势](./17-deep-dive-uv.md)（依赖解析与全局缓存原理）
-* [4.3 SSH 协议的安全机制](./18-deep-dive-ssh.md)（非对称加密基础）
-* [4.4 CI/CD 在代码质量控制中的作用](./19-deep-dive-ci.md)（自动化流水线如何保障工程底线）
+
+* [4.1 src 布局的必要性](./18-deep-dive-src.md)（解决模块导入路径冲突）
+* [4.2 uv 包管理器的性能优势](./19-deep-dive-uv.md)（依赖解析与全局缓存原理）
+* [4.3 SSH 协议的安全机制](./20-deep-dive-ssh.md)（非对称加密基础）
+* [4.4 CI/CD 流水线与自动化质检](./21-deep-dive-ci.md)（GitHub Actions 配置与代码质量门禁）
 
 ---
 
