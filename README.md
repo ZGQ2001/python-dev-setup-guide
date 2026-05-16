@@ -1,7 +1,8 @@
 <div align="center">
 
 # 非程序员的工程化 Python 入门操作手册
-**（Windows + uv + VS Code + GitHub）**
+
+## （Windows + uv + VS Code + GitHub）
 
 ![Python](https://img.shields.io/badge/python-3.12+-blue.svg)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
@@ -20,6 +21,18 @@
 欢迎！这是一份专为零基础开发者、非计算机专业编程实践者（如土木工程、检测人员）打造的**现代 Python 工程化环境部署以及工作应用指南**。
 
 本仓库不包含具体的业务处理代码，而是作为团队标准化的**环境基建与工作流规范**。我们力求通过最严谨的物理隔离与自动化机制，实现零基础人员也能达到“严禁带红线提交”的工程化标准。
+
+## 📁 目录
+
+```text
+python-dev-setup-guide/
+├── 📁 docs/                   # 核心操作手册（分章指引）
+│   ├── 📄 index.md            # 导航主页
+│   ├── 📄 01-environment.md   # 基础环境安装
+│   └── ...
+├── 📄 CLAUDE.md               # 项目宪章（AI 行为准则）
+└── 📄 README.md               # 本说明文档
+```
 
 ## 📖 开始配置
 

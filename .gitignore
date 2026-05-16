@@ -43,6 +43,11 @@ desktop.ini         # Windows 文件夹自定义图标配置
 .vscode/
 *.code-workspace
 
+# ===== ❌ AGENT 本地配置 =====
+.deepseek/
+.agent/
+.claude/
+
 # ===== ❌ 日志与临时文件 =====
 *.log
 *.tmp
@@ -69,3 +74,4 @@ desktop.ini         # Windows 文件夹自定义图标配置
 # *.xlsx
 # *.pdf
 # /data/
+

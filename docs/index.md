@@ -29,13 +29,14 @@
 
 ### 第二部分：标准开发工作流
 
-* [2.1 AI 辅助编程工作流](./05-ai-workflow.md)（需求描述、代码验收、AGENTS.md 配置）
+* [2.1 Vibe Coding（氛围编程）：用中文说话，让 AI 替你写代码](./05-ai-workflow.md)（需求描述、代码验收、AGENTS.md 配置）
 * [2.2 代码调试与排错](./06-debugging.md)（断点调试原理与 AI 辅助错误分析）
 * [2.3 日常代码提交流程](./07-git-workflow.md)（Pull → Code → Lint/Format → Commit → Push）
 * [2.4 敏感信息与配置隔离](./08-security.md)（使用 `.env` 保护接口密钥与私有数据）
 * [2.5 执行脚本封装](./09-bat-scripts.md)（编写 `.bat` 批处理文件，实现脱离 IDE 独立运行）
 * [2.6 单元测试基础](./10-unit-testing.md)（pytest 核心用法与测试文件组织）
 * [2.7 跨设备环境迁移](./11-migration.md)（基于 `uv.lock` 的依赖还原与环境重建）
+* [2.8 Agent 模式详解](./agent-guide.md) ⭐ 进阶：让 AI 在你的项目里自己动手干活
 
 ### 第三部分：工程配置参考
 

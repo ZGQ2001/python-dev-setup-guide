@@ -101,18 +101,18 @@ my-first-tool/
 ├── .python-version
 ├── pyproject.toml        ← 项目配置（自动配置了打包构建系统）
 └── src/                  ← ！！！核心变化在这里！！！
-    └── bridge_check/     ← 你的专属代码包（业务逻辑全放这里）
+    └── my_project/     ← 你的专属代码包（业务逻辑全放这里）
         ├── __init__.py   ← 声明这是一个正规的 Python 包
         └── py.typed
 ```
 
 - **优点 1（物理隔离）**： 代码在 src/ 下，配置文件在根目录，清晰解耦。
 
-- **优点 2（杜绝导包灾难）**： 强制你使用绝对路径导入（例如 from bridge_check.utils import reader），彻底解决当前目录文件与第三方库重名导致的玄学报错。
+- **优点 2（杜绝导包灾难）**： 强制你使用绝对路径导入（例如 from my_project.utils import reader），彻底解决当前目录文件与第三方库重名导致的玄学报错。
 
 - **优点 3（测试与分发）**： 这是 Python 业界最推崇的标准格式，完美兼容未来的单元测试（pytest）和二进制编译（PyInstaller）
 
->💡 后续操作提醒： 如果你选择了**模式二**，uv 不会自动生成 `main.py`。你需要手动在 `src/bridge_check/` 目录下新建 `main.py` 作为程序入口。
+>💡 后续操作提醒： 如果你选择了**模式二**，uv 不会自动生成 `main.py`。你需要手动在 `src/my_project/` 目录下新建 `main.py` 作为程序入口。
 
 >💡 这些文件除 `.venv/`（暂时还没生成）之外都需要上传到 GitHub。
 
